@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <!-- left side or sidebar stuff -->
+    <div class="set-username empty" id="set-username">
+        <input type="text" id="username-input">
+        <button id="username-button">Submit</button>
+    </div>
+    <div class="chat-section" id="chat-section">
+      
+      <header id="header">header</header>
+      <div class="left" id="left">
+        <div id="close">close</div>
+        <div class="top-header">
+          <div id="you"></div>
+          <div class="global" id="global">Global</div>
+        </div>
+        <div class="rest" id="userlist">
+            <p>Currently Online:</p>
+            <div id="userlist-container">
+
+            </div>
+        </div>
+      </div>
+
+      <!-- right side -->
+      <div class="right">
+        <div class="top">
+            <p>This is the global window</p>
+        </div>
+        <div class="middle" id="middle">
+          
+        </div>
+        <div class="bottom">
+          <input type="text" placeholder="Type your message" id="text-input">
+          <button id="send-text">Send</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
